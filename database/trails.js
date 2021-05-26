@@ -8,16 +8,14 @@ module.exports = [
         "blaze": "minus blue",
         "pointShortList": "Gara Barnova,Manastirea Barnova",
         "pointLongList": "Gara Barnova,Sat Bordea,Manastirea Barnova",
-        "time": 90,
-        "cityCodes": "Iasi"
+        "time": 90
     },
     {
         "id": 2,
         "code": "bar-2",
         "type": 1,
         "name": null,
-        "massif": "Barnova",
-        "cityCodes": "Iasi"
+        "massif": "Barnova"
     },
     // FIXME: put some proper real trails here instead of the pasted ones:
     {
@@ -29,8 +27,7 @@ module.exports = [
         "blaze": "plus red",
         "pointShortList": "Gara Barnova,Manastirea Barnova",
         "pointLongList": "Gara Barnova,Sat Bordea,Manastirea Barnova",
-        "time": 90,
-        "cityCodes": "Iasi"
+        "time": 90
     },
     {
         "id": 60,
@@ -40,8 +37,7 @@ module.exports = [
         "massif": "Barnova",
         "blaze": "minus red",
         "pointShortList": "Gara Barnova,Manastirea Barnova",
-        "time": 90,
-        "cityCodes": "Iasi"
+        "time": 90
     },
     {
         "id": 70,
@@ -51,8 +47,7 @@ module.exports = [
         "massif": "Barnova",
         "blaze": "caret-up red",
         "pointShortList": "Gara Barnova,Manastirea Barnova",
-        "time": 90,
-        "cityCodes": "Iasi"
+        "time": 90
     },
     {
         "id": 80,
@@ -62,8 +57,7 @@ module.exports = [
         "massif": "Barnova",
         "blaze": "plus yellow",
         "pointShortList": "Gara Barnova,Manastirea Barnova",
-        "time": 90,
-        "cityCodes": "Iasi"
+        "time": 90
     },
     {
         "id": 90,
@@ -73,8 +67,7 @@ module.exports = [
         "massif": "Barnova",
         "blaze": "minus yellow",
         "pointShortList": "Gara Barnova,Manastirea Barnova",
-        "time": 90,
-        "cityCodes": "Iasi"
+        "time": 90
     },
     {
         "id": 100,
@@ -84,8 +77,7 @@ module.exports = [
         "massif": "Barnova",
         "blaze": "caret-up yellow",
         "pointShortList": "Gara Barnova,Manastirea Barnova",
-        "time": 90,
-        "cityCodes": "Iasi"
+        "time": 90
     },
     {
         "id": 110,
@@ -95,8 +87,7 @@ module.exports = [
         "massif": "Barnova",
         "blaze": "plus blue",
         "pointShortList": "Gara Barnova,Manastirea Barnova",
-        "time": 90,
-        "cityCodes": "Iasi"
+        "time": 90
     },
     {
         "id": 120,
@@ -106,8 +97,7 @@ module.exports = [
         "massif": "Barnova",
         "blaze": "minus blue",
         "pointShortList": "Gara Barnova,Manastirea Barnova",
-        "time": 90,
-        "cityCodes": "Iasi"
+        "time": 90
     },
     {
         "id": 130,
@@ -117,8 +107,7 @@ module.exports = [
         "massif": "Barnova",
         "blaze": "circle blue",
         "pointShortList": "Gara Barnova,Manastirea Barnova",
-        "time": 90,
-        "cityCodes": "Iasi"
+        "time": 90
     },
     {
         "id": 140,
@@ -128,8 +117,7 @@ module.exports = [
         "massif": "Barnova",
         "blaze": "caret-up blue",
         "pointShortList": "Gara Barnova,Manastirea Barnova",
-        "time": 90,
-        "cityCodes": "Iasi"
+        "time": 90
     },
     {
         "id": 150,
@@ -139,8 +127,7 @@ module.exports = [
         "massif": "Barnova",
         "blaze": "minus blue",
         "pointShortList": "Gara Barnova,Manastirea Barnova",
-        "time": 90,
-        "cityCodes": "Iasi"
+        "time": 90
     },
     {
         "id": 160,
@@ -150,8 +137,7 @@ module.exports = [
         "massif": "Barnova",
         "blaze": "minus blue",
         "pointShortList": "Gara Barnova,Manastirea Barnova",
-        "time": 90,
-        "cityCodes": "Iasi"
+        "time": 90
     },
     {
         "id": 170,
@@ -161,8 +147,7 @@ module.exports = [
         "massif": "Barnova",
         "blaze": "minus blue",
         "pointShortList": "Gara Barnova,Manastirea Barnova",
-        "time": 90,
-        "cityCodes": "Iasi"
+        "time": 90
     },
     {
         "id": 180,
@@ -172,8 +157,7 @@ module.exports = [
         "massif": "Barnova",
         "blaze": "minus blue",
         "pointShortList": "Gara Barnova,Manastirea Barnova",
-        "time": 90,
-        "cityCodes": "Iasi"
+        "time": 90
     },
     {
         "id": 190,
@@ -183,8 +167,7 @@ module.exports = [
         "massif": "Barnova",
         "blaze": "minus blue",
         "pointShortList": "Gara Barnova,Manastirea Barnova",
-        "time": 90,
-        "cityCodes": "Iasi"
+        "time": 90
     },
     {
         "id": 200,
@@ -194,8 +177,7 @@ module.exports = [
         "massif": "Barnova",
         "blaze": "minus blue",
         "pointShortList": "Gara Barnova,Manastirea Barnova",
-        "time": 90,
-        "cityCodes": "Iasi"
+        "time": 90
     },
     {
         "id": 210,
@@ -205,8 +187,7 @@ module.exports = [
         "massif": "Barnova",
         "blaze": "minus blue",
         "pointShortList": "Gara Barnova,Manastirea Barnova",
-        "time": 90,
-        "cityCodes": "Iasi"
+        "time": 90
     },
     {
         "id": 220,
