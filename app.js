@@ -9,6 +9,7 @@ var usersRouter = require('./routes/users');
 var citiesRouter = require('./routes/cities');
 var trailsRouter = require('./routes/trails');
 var trailRouter = require('./routes/trail');
+var trailDetailRouter = require('./routes/trailDetail');
 var database = require('./database');
 
 var app = express();
@@ -28,6 +29,7 @@ app.use('/users', usersRouter);
 app.use('/cities', citiesRouter);
 app.use('/trails', trailsRouter);
 app.use('/trail', trailRouter);
+app.use('/detail', trailDetailRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
