@@ -26,10 +26,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/cities', citiesRouter);
-app.use('/trails', trailsRouter);
-app.use('/trail', trailRouter);
-app.use('/detail', trailDetailRouter);
+app.use('/api/cities', citiesRouter);
+app.use('/api/trails', trailsRouter);
+app.use('/api/trail', trailRouter);
+app.use('/api/detail', trailRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

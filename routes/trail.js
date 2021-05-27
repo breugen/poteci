@@ -40,8 +40,8 @@ router.get('/:trailCode', function (req, res, next) {
                 name: rows[0].name,
                 massif: rows[0].massif,
                 blaze: rows[0].blaze,
-                pointShortList: rows[0].pointShortList,
-                pointLongList: rows[0].pointLongList,
+                pointShortList: rows[0].pointShortList ? rows[0].pointShortList.split(',') : [],
+                pointLongList: rows[0].pointLongList ? rows[0].pointLongList.split(',') : [],
                 time: rows[0].time,
                 segments: []
             }
@@ -55,8 +55,8 @@ router.get('/:trailCode', function (req, res, next) {
                         name: row.segment_name,
                         massif: row.segment_massif,
                         blaze: row.segment_blaze,
-                        pointShortList: row.segment_pointShortList,
-                        pointLongList: row.segment_pointLongList,
+                        pointShortList: row.segment_pointShortList ? rows.segment_pointShortList.split(',') : [],
+                        pointLongList: row.segment_pointLongList ? rows.segment_pointLongList.split(',') : [],
                         time: row.segment_time
                     });
                 }

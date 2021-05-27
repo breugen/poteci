@@ -25,6 +25,10 @@ router.get('/:city', function(req, res, next) {
   `, city, function (err, trails) {
         // some of these are segments
         const trailCodes = trails.map(trail => '\'' + trail.code + '\'').join(', ');
+        trails.forEach(trail => {
+          trail.pointShortList = trail.pointShortList ? trail.pointShortList.split(',') : [];
+          trail.pointLongList = trail.pointLongList ? trail.pointLongList.split(',') : [];
+        });
 
         database.db.all('SELECT * FROM segments WHERE parent IN (' + trailCodes + ')'
           + ' ORDER BY position', function (err, segments) {
@@ -38,6 +42,8 @@ router.get('/:city', function(req, res, next) {
             segmentParentTrail.segments.push(segmentChildTrail)
           });
             
+
+
           // filtering the segments out before sending the response
           res.send(trails.filter(trail => trail.type));
       });
