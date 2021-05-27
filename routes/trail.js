@@ -16,10 +16,15 @@ router.get('/:trailCode', function (req, res, next) {
     trails.pointShortList as pointShortList,
     trails.pointLongList as pointLongList,
     trails.time as time,
-
-    // FIXME: continue to join segments then loop over 
-    // the segments and build the proper trail.
-    paths.id as id
+    paths.id as segment_id,
+    paths.code as segment_code,
+    paths.type as segment_type,
+    paths.name as segment_name,
+    paths.massif as segment_massif,
+    paths.blaze as segment_blaze,
+    paths.pointShortList as segment_pointShortList,
+    paths.pointLongList as segment_pointLongList,
+    paths.time as segment_time
     FROM trails
     LEFT JOIN segments
     ON segments.parent = trails.code
@@ -27,20 +32,40 @@ router.get('/:trailCode', function (req, res, next) {
     ON paths.code = segments.child
     WHERE trails.code = ?
   `, trailCode, function (err, rows) {
-        rows.forEach(row => {
-            console.log(row);
-        });
-        //   segments.forEach((segment) => {
-        //     const segmentParentTrail = trails.find(trail => trail.code === segment.parent);
-        //     if (!Array.isArray(segmentParentTrail.segments)) {
-        //       segmentParentTrail.segments = [];
-        //     }
-        //     const segmentChildTrail = trails.find(trail => trail.code === segment.child);
-        //     segmentParentTrail.segments.push(segmentChildTrail)
-        //   });
+        if (rows.length) {
+            const trail = {
+                id: rows[0].id,
+                code: rows[0].code,
+                type: rows[0].type,
+                name: rows[0].name,
+                massif: rows[0].massif,
+                blaze: rows[0].blaze,
+                pointShortList: rows[0].pointShortList,
+                pointLongList: rows[0].pointLongList,
+                time: rows[0].time,
+                segments: []
+            }
 
-        // filtering the segments out before sending the response
-        res.send(trails.filter(trail => trail.type));
+            rows.forEach(row => {
+                if (row.segment_code) {
+                    trail.segments.push({
+                        id: row.segment_id,
+                        code: row.segment_code,
+                        type: row.segment_type,
+                        name: row.segment_name,
+                        massif: row.segment_massif,
+                        blaze: row.segment_blaze,
+                        pointShortList: row.segment_pointShortList,
+                        pointLongList: row.segment_pointLongList,
+                        time: row.segment_time
+                    });
+                }
+            });
+
+            res.send(trail);
+        } else {
+            res.sendStatus(404);
+        }
     });
 });
 
