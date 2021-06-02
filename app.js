@@ -29,7 +29,7 @@ app.use('/users', usersRouter);
 app.use('/api/cities', citiesRouter);
 app.use('/api/trails', trailsRouter);
 app.use('/api/trail', trailRouter);
-app.use('/api/detail', trailRouter);
+app.use('/api/detail', trailDetailRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

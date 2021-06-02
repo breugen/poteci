@@ -208,6 +208,7 @@ module.exports = [
     },
     {
         "code": "bar-22",
+        "blaze": "circle red",
         "pointShortList": "Poiana cu Schit,Gara Barnova",
         "pointLongList": "Gara Barnova,Cabana Barnova,Manastirea Barnova",
         "time": 40

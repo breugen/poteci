@@ -33,6 +33,16 @@ router.get('/:trailCode', function (req, res, next) {
     WHERE trails.code = ?
   `, trailCode, function (err, rows) {
         if (rows.length) {
+            let pointShortList = [];
+            if (rows[0].pointShortList) {
+                pointShortList = rows[0].pointShortList.split(',');
+            }
+
+            let pointLongList = [];
+            if (rows[0].pointLongList) {
+                pointLongList = rows[0].pointLongList.split(',');
+            }
+
             const trail = {
                 id: rows[0].id,
                 code: rows[0].code,
@@ -40,14 +50,24 @@ router.get('/:trailCode', function (req, res, next) {
                 name: rows[0].name,
                 massif: rows[0].massif,
                 blaze: rows[0].blaze,
-                pointShortList: rows[0].pointShortList ? rows[0].pointShortList.split(',') : [],
-                pointLongList: rows[0].pointLongList ? rows[0].pointLongList.split(',') : [],
+                pointShortList,
+                pointLongList,
                 time: rows[0].time,
                 segments: []
             }
 
             rows.forEach(row => {
                 if (row.segment_code) {
+                    let pointShortList = [];
+                    if (row.segment_pointShortList) {
+                        pointShortList = row.segment_pointShortList.split(',');
+                    }
+
+                    let pointLongList = [];
+                    if (row.segment_pointLongList) {
+                        pointLongList = row.segment_pointLongList.split(',');
+                    }
+
                     trail.segments.push({
                         id: row.segment_id,
                         code: row.segment_code,
@@ -55,8 +75,8 @@ router.get('/:trailCode', function (req, res, next) {
                         name: row.segment_name,
                         massif: row.segment_massif,
                         blaze: row.segment_blaze,
-                        pointShortList: row.segment_pointShortList ? rows.segment_pointShortList.split(',') : [],
-                        pointLongList: row.segment_pointLongList ? rows.segment_pointLongList.split(',') : [],
+                        pointShortList,
+                        pointLongList,
                         time: row.segment_time
                     });
                 }
