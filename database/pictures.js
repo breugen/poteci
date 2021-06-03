@@ -1,12 +1,12 @@
 module.exports = [
     {
         "trail": "bar-2",
-        "url": "http://www.poianacuschit.ro/foto/2011/s5.jpg",
+        "url": "images/bar-2-pic1.jpg",
         "description": "this picture label"
     },
     {
-        "trail": "bar-3",
-        "url": "http://www.poianacuschit.ro/foto/2011/s4.jpg",
+        "trail": "bar-2",
+        "url": "images/bar-2-pic2.jpg",
         "description": "this 2 picture label"
     }
 ]

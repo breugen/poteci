@@ -9,7 +9,13 @@ router.get('/:trailCode', function (req, res, next) {
       SELECT * FROM details
       WHERE trail = ?
     `, trailCode, function (err, trailDetail) {
+        database.db.all(`
+          SELECT * FROM pictures
+          WHERE trail = ?
+      `, trailCode, function (err, pictures) {
+        trailDetail.pictures = pictures;
         res.send(trailDetail);
+      });
     });
 });
 
