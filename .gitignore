@@ -1,7 +1,8 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 #images
-/public/images
+# TODO: a better way to load images, not from source code 
+# /public/images
 
 # compiled output
 /dist
