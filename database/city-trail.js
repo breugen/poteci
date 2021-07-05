@@ -113,5 +113,20 @@ module.exports = [
         "city": "Iasi",
         "trail": "bar-22",
         "position": 19
+    },
+    {
+        "city": "Iasi",
+        "trail": "bar-01",
+        "position": 20
+    },
+    {
+        "city": "Iasi",
+        "trail": "bar-02",
+        "position": 21
+    },
+    {
+        "city": "Iasi",
+        "trail": "bar-03",
+        "position": 22
     }
 ]

@@ -6,9 +6,9 @@ module.exports = [
         "name": "Hadambu",
         "massif": "Barnova",
         "blaze": "minus blue",
-        "pointShortList": "Gara Barnova,Manastirea Barnova",
-        "pointLongList": "Gara Barnova,Sat Bordea,Manastirea Barnova",
-        "time": 90
+        "pointShortList": "Gara Barnova,Manastirea Hadambu",
+        "pointLongList": "Gara Barnova,Sat Bordea,Manastirea Hadambu",
+        "time": 180
     },
     {
         "id": 2,
@@ -17,37 +17,52 @@ module.exports = [
         "name": null,
         "massif": "Barnova"
     },
-    // FIXME: put some proper real trails here instead of the pasted ones:
     {
-        "id": 50,
+        "id": 3,
         "code": "bar-3",
         "type": 1,
-        "name": "Hadambu",
-        "massif": "Barnova",
-        "blaze": "plus red",
-        "pointShortList": "Gara Barnova,Manastirea Barnova",
-        "pointLongList": "Gara Barnova,Sat Bordea,Manastirea Barnova",
-        "time": 90
-    },
-    {
-        "id": 60,
-        "code": "bar-4",
-        "type": 1,
-        "name": "Hadambu",
-        "massif": "Barnova",
-        "blaze": "minus red",
-        "pointShortList": "Gara Barnova,Manastirea Barnova",
-        "time": 90
-    },
-    {
-        "id": 70,
-        "code": "bar-5",
-        "type": 1,
-        "name": "Hadambu",
+        "name": "Doboravat",
         "massif": "Barnova",
         "blaze": "caret-up red",
-        "pointShortList": "Gara Barnova,Manastirea Barnova",
+        "pointShortList": "Gara Barnova,Cabana Ciurea, Dobrovat",
+        "pointLongList": "Gara Barnova,Cabana Ciurea,Dobrovat",
         "time": 90
+    },
+    {
+        "id": 4,
+        "code": "bar-4",
+        "type": 1,
+        "name": null,
+        "massif": "Barnova",
+        "pointShortList": "Gara Barnova,Sat Slobozia,Pietrarie",
+    },
+    {
+        "id": 5,
+        "code": "bar-5",
+        "type": 1,
+        "massif": "Barnova",
+        "pointShortList": "Gara Barnova,Sat Slobozia,Repedea",
+    },
+    {
+        "code": "bar-01",
+        "blaze": "minus red",
+        "pointShortList": "Gara Barnova,Sat Slobozia,Poiana Rotunda,Bifurcatie cruce rosie Dobrovat",
+        "pointLongList": "Gara Barnova,Sat Slobozia,Poiana Rotunda,Bifurcatie cruce rosie Dobrovat",
+        "time": 180
+    },
+    {
+        "code": "bar-02",
+        "blaze": "plus red",
+        "pointShortList": "Bifurcatie cruce rosie Dobrovat,Pietrarie,Hamak",
+        "pointLongList": "Bifurcatie cruce rosie Dobrovat,Pietrarie,Hamak",
+        "time": 60
+    },
+    {
+        "code": "bar-03",
+        "blaze": "minus red",
+        "pointShortList": "Bifurcatie cruce rosie Dobrovat,Rezervatia Repedea",
+        "pointLongList": "Bifurcatie cruce rosie Dobrovat,Rezervatia Repedea",
+        "time": 60
     },
     {
         "id": 80,
