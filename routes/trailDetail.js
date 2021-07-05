@@ -13,8 +13,13 @@ router.get('/:trailCode', function (req, res, next) {
           SELECT * FROM pictures
           WHERE trail = ?
       `, trailCode, function (err, pictures) {
-        trailDetail.pictures = pictures;
-        res.send(trailDetail);
+        if (trailDetail) {
+          trailDetail.pictures = pictures;
+          res.send(trailDetail);
+        } else {
+          console.error('Could not find trail detail for code ' + trailCode);
+          res.sendStatus(404);
+        }
       });
     });
 });
